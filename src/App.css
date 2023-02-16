@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-track {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #5c5b5b;
+  border-radius: 5px;
+}
+.container {
+  width: 100%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wrapper {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+.data__table {
+  width: 50%;
+}
+.data__table table {
+  font-size: 0.8rem;
+  border-collapse: collapse;
+}
+.data__table table tr {
+  border-bottom: 1px solid #ccc;
+  padding: 2px;
+}
+.form {
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 20px;
+}
+.btn {
+  display: inline-block;
+  background: #4d6dfc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.action_btns {
+  display: flex;
+  gap: 2px;
+}
+.action__btn {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+  outline: none;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+.empty {
+  background: rgb(232, 245, 245);
+  padding: 20px;
+}
+.range__date {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.skills__section {
+  position: relative;
+}
+.skills__header {
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.selected__skills {
+  display: flex;
+  gap: 3px;
+}
+.skill {
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.options__box {
+  transition: 0.2s linear;
+  padding: 10px;
+  max-height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 30px;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 11;
+  visibility: hidden;
+  opacity: 0;
+}
+.options__box.active {
+  margin-top: 10px;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s linear;
+}
+.option {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+.option:hover {
+  background: #ccc;
+  transition: 0.3s all linear;
+}
+.option:hover,
+.selected {
+  background: #4d6dfc;
+  color: #fff;
+}
